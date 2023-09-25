@@ -1,3 +1,7 @@
+git init
+git remote add origin https://github.com/asylbek23/gulp-template-webcademy.ru.git
+git pull origin main
+
 Команда для установки всех пакетов:
 yarn add gulp gulp-sass sass gulp-file-include gulp-clean gulp-server-livereload gulp-sourcemaps gulp-plumber gulp-notify gulp-group-css-media-queries smart-grid
 
