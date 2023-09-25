@@ -1,0 +1,48 @@
+//==================== [ HTML, Body ] ====================>
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--page-bg);
+  color: var(--text-color);
+  font-family: var(--font-main);
+}
+
+html,
+body {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+//==================== [ h1-h6 Titles ] ====================>
+h1 {
+  font-weight: 600;
+  @include adaptive-value("font-size", 50, 25, 1);
+}
+
+h2 {
+  font-weight: 600;
+  @include adaptive-value("font-size", 30, 20, 1);
+}
+
+h3 {
+  font-weight: 600;
+  @include adaptive-value("font-size", 20, 18, 1);
+}
+
+h4 {
+  font-weight: 600;
+  @include adaptive-value("font-size", 18, 16, 1);
+}
+
+//==================== [ Container ] ====================>
+.container {
+  @include wrapper();
+}
+
+//==================== [ Footer ] ====================>
+.footer {
+  margin-top: auto;
+}

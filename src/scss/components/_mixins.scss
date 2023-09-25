@@ -1,0 +1,31 @@
+@mixin cursor() {
+  cursor: pointer;
+  @include sm-block() {
+    cursor: auto;
+  }
+}
+
+@mixin slider() {
+  overflow: auto;
+  margin-right: -30px;
+  padding-right: 30px;
+  padding-bottom: 20px;
+  @include cursor();
+  @include sm-block() {
+    margin-right: -15px;
+    padding-right: 15px;
+    padding-bottom: 10px;
+  }
+  &::-webkit-scrollbar {
+    height: 9px;
+  }
+  /* Стилизация бегунка (ползунка) */
+  &::-webkit-scrollbar-thumb {
+    background-color: #d4d4d4; /* Цвет бегунка */
+    border-radius: 20px; /* Скругление углов бегунка */
+  }
+  /* Стилизация трека (фона прокрутки) */
+  &::-webkit-scrollbar-track {
+    background-color: #f1f1f1; /* Цвет фона прокрутки */
+  }
+}
