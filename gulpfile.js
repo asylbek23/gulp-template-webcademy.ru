@@ -31,7 +31,7 @@ gulp.task(
       "fonts:docs",
       "files:docs",
       "js:docs"
-    )
+    ),
     gulp.parallel("server:docs")
   )
 );
