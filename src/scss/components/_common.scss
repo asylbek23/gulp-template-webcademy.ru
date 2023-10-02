@@ -1,8 +1,4 @@
 //==================== [ HTML, Body ] ====================>
-html {
-  scroll-behavior: smooth;
-}
-
 body {
   background-color: var(--page-bg);
   color: var(--text-color);
@@ -18,23 +14,23 @@ body {
 
 //==================== [ h1-h6 Titles ] ====================>
 h1 {
-  font-weight: 600;
-  @include adaptive-value("font-size", 50, 25, 1);
+  // font-weight: 600;
+  // @include adaptive-value("font-size", , , 1);
 }
 
 h2 {
-  font-weight: 600;
-  @include adaptive-value("font-size", 30, 20, 1);
+  // font-weight: 600;
+  // @include adaptive-value('font-size', , , 1);
 }
 
 h3 {
-  font-weight: 600;
-  @include adaptive-value("font-size", 20, 18, 1);
+  // font-weight: 600;
+  // @include adaptive-value('font-size', , , 1);
 }
 
 h4 {
-  font-weight: 600;
-  @include adaptive-value("font-size", 18, 16, 1);
+  // font-weight: 600;
+  // @include adaptive-value('font-size', , , 1);
 }
 
 //==================== [ Container ] ====================>
